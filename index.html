@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/semana8/style.css">
+    <title>Gerador de lista</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Listas</h1>
+    </header>
+    
+    <div class="container">
+        <label for="">Item:</label>
+        <input placeholder="add item..." class="add" id="items" type="text">
+        <label for="">Quantidade:</label>
+        <input placeholder="Nº" class="number" id="qtd" type="number" min="1" max="50">
+    </div>
+    
+    <div class="todo-container">
+        <ul id="lista" class="todo-list"></ul>
+    </div>
+    <div class="container">
+        <button onclick="createList()">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <button id="btn-trash" onclick="clean()">
+            <i class="fa-solid fa-trash-can"></i>
+        </button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f2bbe33073.js" crossorigin="anonymous"></script>
+    <script src="/semana8/semana7_Q1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #ff0000 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #FFE53B 20%,
+            #FF2525 40%, #FF2525 60%, #fff 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        background-position: 200% center;
+    }
+}
+
+header,
+.container {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.add {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    width: 500px;
+    background-color: #fff;
+    border: 2px solid #FFE53B;
+}
+
+.number {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #FFE53B;
+}
+
+input:focus {
+    outline-color: #FF2525;
+}
+
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    color: #FFE53B;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #FFE53B;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 10px;
+}
+
+button:hover {
+    background: #FFE53B;
+    color: #fff;
+}
+
+.liCreat {
+    list-style: none;
+    background-color: #fff;
+    color: #FF2525;
+    border-radius: 15px;
+    padding: 0.5rem;
+    width: 50vh;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+}
